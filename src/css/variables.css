@@ -1,0 +1,16 @@
+:root{
+    --fonte-destaque: "Noto Serif KR", serif;
+    --fonte-paragrafo: "Cormorant Infant", serif;
+
+    --bg-carta-normal-1: hsl(37, 44%, 51%);
+    --bg-carta-normal-2: hsl(45, 58%, 47%);
+    --bg-carta-fusao: hsl(284, 33%, 47%);
+    --bg-carta-especial: hsl(20, 51%, 48%);
+    --bg-carta-invocacao: hsl(215, 52%, 52%);
+
+    --bg-descricao-normal-1: hsl(41, 71%, 78%);
+    --bg-descricao-normal-2: hsl(52, 59%, 79%);
+    --bg-descricao-fusao: hsl(284, 69%, 79%);
+    --bg-descricao-especial: hsl(28, 51%, 80%);
+    --bg-descricao-invocacao: hsl(218, 53%, 72%);
+}

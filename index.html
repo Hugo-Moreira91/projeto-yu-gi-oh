@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Yu-Gi-Oh!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" sizes="32x32" type="image/png">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./src/images/logo.png" alt="Logo Yu-Gi-Oh!">
+    </header>
+
+    <main class="monstros-slider">
+        <button class="btn-seta btn-voltar" id="btn-voltar">
+            <img src="./src/images/reliquia-do-milenio.png" alt="Relíquia do Milênio">
+        </button>
+
+        <ul class="lista-monstros">
+            <li class="cartao selecionado">
+                <div class="container fundo-normal-2">
+                    <div class="nome-elemento">
+                        <h2 class="nome">Mago Negro</h2>
+                        <img class="elemento" src="./src/images/elemento-dark.png" alt="Elemento Dark">
+                    </div>
+                    <div class="raridade">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <img class="img-monstro" src="./src/images/mago-negro.png" alt="Mago Negro">
+                    <div class="descricao bg-normal-2">
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <h3 class="tipo">[Mago]</h3>
+                        <p class="texto">O mago supremo em termos de ataque e defesa.</p>
+                        <div class="ataque-defesa">
+                            <span class="valor">ATK / 2500</span>
+                            <span class="valor">DEF / 2100</span>
+                        </div>
+                    </div>
+                    <i class="selo"></i>
+                </div>
+            </li>
+
+            <li class="cartao">
+                <div class="container fundo-normal-1">
+                    <div class="nome-elemento">
+                        <h2 class="nome ajuste-nome-longo">Dragão Branco de Olhos Azuis</h2>
+                        <img class="elemento" src="./src/images/elemento-light.png" alt="Elemento Light">
+                    </div>
+                    <div class="raridade">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <img class="img-monstro" src="./src/images/dragao-branco.png" alt="Dragão Branco de Olhos Azuis">
+                    <div class="descricao bg-normal-1">
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <h3 class="tipo">[Dragão]</h3>
+                        <p class="texto">Este lendário dragão é uma poderosa máquina de destruição. Praticamente invencível, muito poucos enfrentaram essa magnífica criatura e viveram para contar a história.</p>
+                        <div class="ataque-defesa">
+                            <span class="valor">ATK / 3000</span>
+                            <span class="valor">DEF / 2500</span>
+                        </div>
+                    </div>
+                    <i class="selo"></i>
+                </div>
+            </li>
+
+            <li class="cartao">
+                <div class="container fundo-fusao">
+                    <div class="nome-elemento">
+                        <h2 class="nome ajuste-nome-medio">Dragão Caveira Negro</h2>
+                        <img class="elemento" src="./src/images/elemento-dark.png" alt="Elemento Dark">
+                    </div>
+                    <div class="raridade">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <img class="img-monstro" src="./src/images/dragao-caveira-negro.png" alt="Dragão Caveira Negro">
+                    <div class="descricao bg-fusao">
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <h3 class="tipo">[Dragão / Fusão]</h3>
+                        <p class="texto">"Rei Caveira" + "Dragão Negro de Olhos Vermelhos"<br>(Este card é tratado como um card "Arquidemônio")</p>
+                        <div class="ataque-defesa">
+                            <span class="valor">ATK / 3200</span>
+                            <span class="valor">DEF / 2500</span>
+                        </div>
+                    </div>
+                    <i class="selo"></i>
+                </div>
+            </li>
+
+            <li class="cartao">
+                <div class="container fundo-normal-2">
+                    <div class="nome-elemento">
+                        <h2 class="nome">Rei Caveira</h2>
+                        <img class="elemento" src="./src/images/elemento-dark.png" alt="Elemento Dark">
+                    </div>
+                    <div class="raridade">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <img class="img-monstro" src="./src/images/rei-caveira.png" alt="Rei Caveira">
+                    <div class="descricao bg-normal-2">
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <h3 class="tipo">[Demônio]</h3>
+                        <p class="texto">Um demônio com poderes das trevas para confundir o inimigo. Entre os demônios, é um dos mais fortes.</p>
+                        <div class="ataque-defesa">
+                            <span class="valor">ATK / 2500</span>
+                            <span class="valor">DEF / 1200</span>
+                        </div>
+                    </div>
+                    <i class="selo"></i>
+                </div>
+            </li>
+
+            <li class="cartao">
+                <div class="container fundo-normal-1">
+                    <div class="nome-elemento">
+                        <h2 class="nome ajuste-nome-muito-longo">Dragão Negro de Olhos Vermelhos</h2>
+                        <img class="elemento" src="./src/images/elemento-dark.png" alt="Elemento Dark">
+                    </div>
+                    <div class="raridade">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <img class="img-monstro" src="./src/images/dragao-negro.png" alt="Dragão Negro de Olhos Vermelhos">
+                    <div class="descricao bg-normal-1">
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <h3 class="tipo">[Dragão]</h3>
+                        <p class="texto">Um dragão feroz com ataque letal.</p>
+                        <div class="ataque-defesa">
+                            <span class="valor">ATK / 2400</span>
+                            <span class="valor">DEF / 2000</span>
+                        </div>
+                    </div>
+                    <i class="selo"></i>
+                </div>
+            </li>
+
+            <li class="cartao">
+                <div class="container fundo-invocacao">
+                    <div class="nome-elemento">
+                        <h2 class="nome ajuste-nome-medio-2">Mago do Caos das Trevas</h2>
+                        <img class="elemento" src="./src/images/elemento-dark.png" alt="Elemento Dark">
+                    </div>
+                    <div class="raridade">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <img class="img-monstro" src="./src/images/mago-do-caos.png" alt="Mago do Caos das Trevas">
+                    <div class="descricao bg-invocacao">
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <h3 class="tipo">[Mago / Ritual]</h3>
+                        <p class="texto">Você pode invocar este card por Invocação-Ritual com "Ritual de Magia Negra".</p>
+                        <div class="ataque-defesa">
+                            <span class="valor">ATK / 2800</span>
+                            <span class="valor">DEF / 2600</span>
+                        </div>
+                    </div>
+                    <i class="selo"></i>
+                </div>
+            </li>
+
+            <li class="cartao">
+                <div class="container fundo-especial">
+                    <div class="nome-elemento">
+                        <h2 class="nome">Kuriboh</h2>
+                        <img class="elemento" src="./src/images/elemento-dark.png" alt="Elemento Dark">
+                    </div>
+                    <div class="raridade">
+                        <i></i>
+                    </div>
+                    <img class="img-monstro" src="./src/images/kuriboh.png" alt="Kuriboh">
+                    <div class="descricao bg-especial">
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <h3 class="tipo">[Demônio / Efeito]</h3>
+                        <p class="texto">Durante o turno do seu oponente: você pode descartar este card; você não sofre dano de batalha desta batalha (este é um Efeito Rápido).</p>
+                        <div class="ataque-defesa">
+                            <span class="valor">ATK / 300</span>
+                            <span class="valor">DEF / 200</span>
+                        </div>
+                    </div>
+                    <i class="selo"></i>
+                </div>
+            </li>
+
+            <li class="cartao">
+                <div class="container fundo-normal-1">
+                    <div class="nome-elemento">
+                        <h2 class="nome ajuste-nome-longo-2">Gaia, o Cavaleiro Impetuoso</h2>
+                        <img class="elemento" src="./src/images/elemento-earth.png" alt="Elemento Earth">
+                    </div>
+                    <div class="raridade">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <img class="img-monstro" src="./src/images/gaia.png" alt="Gaia, o Cavaleiro Impetuoso">
+                    <div class="descricao bg-normal-1">
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <h3 class="tipo">[Guerreiro]</h3>
+                        <p class="texto">Um cavaleiro cujo cavalo galopa mais rápido do que o vento. A sua carga de batalha é de uma força avassaladora.</p>
+                        <div class="ataque-defesa">
+                            <span class="valor">ATK / 2300</span>
+                            <span class="valor">DEF / 2100</span>
+                        </div>
+                    </div>
+                    <i class="selo"></i>
+                </div>
+            </li>
+
+            <li class="cartao">
+                <div class="container fundo-fusao">
+                    <div class="nome-elemento">
+                        <h2 class="nome ajuste-nome-longo efeito-especial">Dragão Supremo de Olhos Azuis</h2>
+                        <img class="elemento" src="./src/images/elemento-dark.png" alt="Elemento Dark">
+                    </div>
+                    <div class="raridade raridade-especial">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <img class="img-monstro monstro-especial" src="./src/images/dragao-supremo-de-olhos-azuis.png" alt="Dragão Supremo de Olhos Azuis">
+                    <div class="descricao bg-fusao">
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <h3 class="tipo">[Dragão / Fusão]</h3>
+                        <p class="texto">"Dragão Branco de Olhos Azuis" + "Dragão Branco de Olhos Azuis" + "Dragão Branco de Olhos Azuis"</p>
+                        <div class="ataque-defesa">
+                            <span class="valor">ATK / 4500</span>
+                            <span class="valor">DEF / 3800</span>
+                        </div>
+                    </div>
+                    <i class="selo"></i>
+                </div>
+            </li>
+
+            <li class="cartao">
+                <div class="container fundo-especial">
+                    <div class="nome-elemento">
+                        <h2 class="nome ajuste-nome-curto">Guardião do Portão</h2>
+                        <img class="elemento" src="./src/images/elemento-dark.png" alt="Elemento Dark">
+                    </div>
+                    <div class="raridade raridade-especial">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <img class="img-monstro monstro-especial" src="./src/images/guardiao-do-portao.png" alt="Guardião do Portão">
+                    <div class="descricao bg-especial">
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <h3 class="tipo">[Guerreiro / Efeito]</h3>
+                        <p class="texto">Não pode ser Invocado por Invocação-Normal/Baixado. Deve primeiro invocá-lo por Invocação-Especial ao oferecer como tributo 1 "Sanga do Trovão", "Kazejin" e "Suijin".</p>
+                        <div class="ataque-defesa">
+                            <span class="valor">ATK / 3750</span>
+                            <span class="valor">DEF / 3400</span>
+                        </div>
+                    </div>
+                    <i class="selo"></i>
+                </div>
+            </li>
+
+            <li class="cartao">
+                <div class="container fundo-fusao">
+                    <div class="nome-elemento">
+                        <h2 class="nome ajuste-nome-muito-longo-2 efeito-especial">Supremo Cavaleiro Mestre dos Dragões</h2>
+                        <img class="elemento" src="./src/images/elemento-light.png" alt="Elemento Light">
+                    </div>
+                    <div class="raridade raridade-especial">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <img class="img-monstro monstro-especial" src="./src/images/supremo-cavaleiro-mestre-dos-dragoes.png" alt="Supremo Cavaleiro Mestre dos Dragões">
+                    <div class="descricao bg-fusao">
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <h3 class="tipo">[Dragão / Fusão / Efeito]</h3>
+                        <p class="texto">"Soldado do Lustro Negro" + "Dragão Definitivo de Olhos Azuis". Este card ganha 500 de ATK para cada monstro do tipo Dragão que você controla, exceto este card.</p>
+                        <div class="ataque-defesa">
+                            <span class="valor">ATK / 5000</span>
+                            <span class="valor">DEF / 5000</span>
+                        </div>
+                    </div>
+                    <i class="selo"></i>
+                </div>
+            </li>
+
+            <li class="cartao">
+                <div class="container fundo-especial">
+                    <div class="nome-elemento">
+                        <h2 class="nome ajuste-nome-curto efeito-especial-2">Exodia, "O Proibido"</h2>
+                        <img class="elemento" src="./src/images/elemento-dark.png" alt="Elemento Dark">
+                    </div>
+                    <div class="raridade">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <img class="img-monstro" src="./src/images/exodia.png" alt='Exodia, "O Proibido"'>
+                    <div class="descricao bg-especial">
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <div class="quadrado"></div>
+                        <h3 class="tipo">[Mago / Efeito]</h3>
+                        <p class="texto">Se, além deste card na sua mão, você possuir "Perna Direita", "Perna Esquerda", "Braço Direito" e "Braço Esquerdo" de "O Proibido", você vence o Duelo.</p>
+                        <div class="ataque-defesa">
+                            <span class="valor">ATK / 1000</span>
+                            <span class="valor">DEF / 1000</span>
+                        </div>
+                    </div>
+                    <i class="selo"></i>
+                </div>
+            </li>
+        </ul>
+
+        <button class="btn-seta btn-avancar" id="btn-avancar">
+            <img src="./src/images/reliquia-do-milenio.png" alt="Relíquia do Milênio">
+        </button>
+    </main>
+
+    <footer class="rodape">
+        <p class="texto-rodape">Projeto adaptado da <span>Semana do Zero ao Programador Contratado</span> <span>Dev em Dobro</span>, por <a class="link" href="https://github.com/Hugo-Moreira91" target="_blank">Hugo César</a></p>
+    </footer>
+
+    <script src="./src/js/index.js"></script>
+
+</body>
+</html>

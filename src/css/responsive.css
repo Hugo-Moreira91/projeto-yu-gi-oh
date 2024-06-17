@@ -1,0 +1,33 @@
+@media(max-width: 620px){
+    .monstros-slider{
+        gap: 10px;
+    }
+
+    .btn-seta{
+        width: 45px;
+        height: 45px;
+    }
+
+    .btn-seta img{
+        width: 30px;
+    }
+}
+
+@media(max-width: 450px){
+    .monstros-slider{
+        gap: 0;
+    }
+
+    .btn-seta{
+        width: 30px;
+        height: 30px;
+    }
+
+    .btn-seta img{
+        width: 20px;
+    }
+
+    .lista-monstros{
+        width: 330px;
+    }
+}
